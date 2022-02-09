@@ -1,8 +1,9 @@
 import logo from "./logo.svg";
 import "./App.scss";
+import Main from "./components/main/main";
 
 function App() {
-  return <main></main>;
+  return <Main />;
 }
 
 export default App;
