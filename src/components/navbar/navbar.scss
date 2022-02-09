@@ -1,0 +1,11 @@
+.navbar {
+  width: 250px;
+  border: 2px black solid;
+}
+
+.navbar__check-input-abv,
+.navbar__check-input-range,
+.navbar__check-input-ph {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
