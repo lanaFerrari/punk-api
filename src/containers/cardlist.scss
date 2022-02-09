@@ -1,11 +1,11 @@
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 250px;
   gap: 1rem;
 
   &__item {
     border: 2px solid black;
     padding: 1rem;
+    width: 200px;
   }
 }
