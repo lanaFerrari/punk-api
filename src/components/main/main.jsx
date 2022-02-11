@@ -36,7 +36,7 @@ const Main = () => {
 
   const filteredBeerList = data.filter((beer) => {
     if (userInput) {
-      return beer.name.toLowerCase().includes(userInput);
+      return beer.name.toLowerCase().includes(userInput.toLowerCase());
     }
     if (!abv && !ph && !range) {
       return data;
