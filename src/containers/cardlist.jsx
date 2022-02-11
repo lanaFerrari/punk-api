@@ -12,12 +12,7 @@ const Cardlist = (props) => {
         const description = beer.description.split(".");
         return (
           <div key={index} className="container__item">
-            <img
-              className="container__img"
-              src={beerPic}
-              alt={beer.name}
-              width="200px"
-            />
+            <img className="container__img" src={beerPic} alt={beer.name} />
             <div className="container__tittle-container">
               <h3 className="container__tittle-container__title">
                 {beer.name}
@@ -33,6 +28,9 @@ const Cardlist = (props) => {
               <p className="container__about__ph">ph: {beer.ph}</p>
               <p className="container__about__abv">ABV: {beer.abv}</p>
             </div>
+            <a href="https://www.brewdog.com/uk" target="blank">
+              <button className="container__button">Add to basket</button>
+            </a>
           </div>
         );
       })}
