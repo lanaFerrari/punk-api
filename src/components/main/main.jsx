@@ -5,14 +5,13 @@ import "./mains.scss";
 
 const Main = () => {
   const [data, setData] = useState([]);
-  console.log(data);
   const [abv, setAbv] = useState(false);
   const [range, setRange] = useState(false);
   const [ph, setPh] = useState(false);
-  const [input, setInput] = useState("");
+  const [userInput, setUserInput] = useState("");
 
   useEffect(() => {
-    fetch("https://api.punkapi.com/v2/beers?per_page=6")
+    fetch("https://api.punkapi.com/v2/beers?per_page=30")
       .then((response) => {
         return response.json();
       })
@@ -31,16 +30,24 @@ const Main = () => {
   const filterByAbv = () => {
     setAbv(!abv);
   };
+  const handleInput = (e) => {
+    setUserInput(e.target.value);
+  };
 
   const filteredBeerList = data.filter((beer) => {
-    console.log(beer);
+    if (userInput) {
+      return beer.name.toLowerCase().includes(userInput);
+    }
     if (!abv && !ph && !range) {
       return data;
-    } else if (abv) {
+    }
+    if (abv) {
       return beer.abv > 6;
-    } else if (ph) {
+    }
+    if (ph) {
       return beer.ph < 4;
-    } else if (range) {
+    }
+    if (range) {
       return beer.first_brewed.split("/")[1] >= 2010;
     }
   });
@@ -51,6 +58,8 @@ const Main = () => {
         filterByPh={filterByPh}
         filterByRange={filterByRange}
         filterByAbv={filterByAbv}
+        userInput={userInput}
+        handleInput={handleInput}
       />
       <Cardlist beersArray={filteredBeerList} />
     </main>
