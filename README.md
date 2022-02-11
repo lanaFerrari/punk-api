@@ -1,6 +1,5 @@
 # Punk API
-
-On this website, the user can check all Brewdog Beers and filter them according to their ABV, pH, Range, and name. Our purpose in this project is to understand and practice React and API's.
+On this website, the user can check all Brewdog Beers and filter them according to their ABV, pH, Range, and name. The purpose of this project is to understand and practice React and API's.
 
 ## Goals:
 - Built entirely in React 
