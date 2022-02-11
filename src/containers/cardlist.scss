@@ -2,36 +2,34 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 
   &__item {
-    border: 1px solid $green-c;
     border-radius: 15px;
     padding: 1rem;
-    max-width: 200px;
+    background-color: $grey-c;
   }
 
   &__img {
     border-radius: 15px;
+    max-width: 18rem;
+    padding-bottom: 1rem;
   }
 
   &__tittle-container {
-    display: grid;
-    justify-items: center;
     padding-top: 0.9rem;
 
     &__title {
       margin: 0;
       height: 40px;
+      font-family: "Secular One", sans-serif;
     }
   }
 
   &__about {
-    display: grid;
-    justify-items: center;
     font-weight: bolder;
 
     &__ph {
@@ -42,6 +40,24 @@
     &__abv {
       color: $red-c;
     }
+  }
+
+  &__button {
+    background-color: $green-c;
+    border-radius: 40px;
+    border: none;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+  }
+
+  &__button:hover {
+    background-color: $blue-c;
+  }
+
+  &__item,
+  &__about,
+  &__tittle-container {
+    display: grid;
+    justify-items: center;
   }
 }
 
