@@ -13,14 +13,19 @@
     background-color: $grey-c;
   }
 
+  &__item:hover {
+    padding: 1rem;
+    background-color: rgb(228, 228, 228);
+  }
+
   &__img {
-    border-radius: 15px;
-    max-width: 18rem;
-    padding-bottom: 1rem;
+    border-radius: 12px;
+    max-width: 16rem;
   }
 
   &__tittle-container {
     padding-top: 0.9rem;
+    max-width: 200px;
 
     &__title {
       margin: 0;
@@ -47,6 +52,7 @@
     border-radius: 40px;
     border: none;
     padding: 0.8rem 2rem 0.8rem 2rem;
+    font-size: medium;
   }
 
   &__button:hover {
