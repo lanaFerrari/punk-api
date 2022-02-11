@@ -6,7 +6,7 @@ const Navbar = (props) => {
     props;
 
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <div className="navbar__textInput">
         <input
           type="text"
@@ -36,7 +36,7 @@ const Navbar = (props) => {
           <input onClick={filterByAbv} type="checkbox" id="abv" name="abv" />
         </div>
       </section>
-    </div>
+    </nav>
   );
 };
 
