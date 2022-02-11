@@ -8,15 +8,13 @@ const Cardlist = (props) => {
   return (
     <div className="container">
       {beersArray.map((beer, index) => {
-        console.log(beer);
         const description = beer.description.split(".");
+        const name = beer.name.toUpperCase();
         return (
           <div key={index} className="container__item">
             <img className="container__img" src={beerPic} alt={beer.name} />
             <div className="container__tittle-container">
-              <h3 className="container__tittle-container__title">
-                {beer.name}
-              </h3>
+              <h3 className="container__tittle-container__title">{name}</h3>
             </div>
             <p className="container__paragraph">{`${
               description[0].length >= 50
