@@ -1,11 +1,27 @@
-.navbar {
-  width: 250px;
-  border: 2px black solid;
-}
+@use "../../Styles/variables.scss" as *;
 
-.navbar__check-input-abv,
-.navbar__check-input-range,
-.navbar__check-input-ph {
+.navbar {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  justify-items: center;
+
+  #input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0.5rem;
+    width: 300px;
+  }
+
+  &__textInput {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  &__section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 400px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
