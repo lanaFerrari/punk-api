@@ -1,11 +1,55 @@
+@use "../Styles/variables.scss" as *;
+
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
   gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   &__item {
-    border: 2px solid black;
+    border: 1px solid $green-c;
+    border-radius: 15px;
     padding: 1rem;
-    width: 200px;
+    max-width: 200px;
+  }
+
+  &__img {
+    border-radius: 15px;
+  }
+
+  &__tittle-container {
+    display: grid;
+    justify-items: center;
+    padding-top: 0.9rem;
+
+    &__title {
+      margin: 0;
+      height: 40px;
+    }
+  }
+
+  &__about {
+    display: grid;
+    justify-items: center;
+    font-weight: bolder;
+
+    &__ph {
+      color: $blue-c;
+      margin: 0;
+    }
+
+    &__abv {
+      color: $red-c;
+    }
+  }
+}
+
+//Media queries
+//For small screens
+@media screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    justify-items: center;
   }
 }
