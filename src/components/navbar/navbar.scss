@@ -5,11 +5,11 @@
   justify-items: center;
 
   #input {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    padding: 0.5rem;
+    border-radius: 40px;
+    border: 1px solid $green-c;
+    padding: 0 1.5rem 0 1.5rem;
     width: 300px;
+    height: 60px;
   }
 
   &__textInput {
@@ -23,5 +23,12 @@
     width: 400px;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    color: $red-c;
   }
+}
+
+//Input placeholder
+::-webkit-input-placeholder {
+  color: $blue-c;
+  font-size: 20px;
 }

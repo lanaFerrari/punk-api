@@ -13,7 +13,7 @@ const Navbar = (props) => {
           id="input"
           name="input"
           value={userInput}
-          placeholder="Search for a beer here or click in the options below"
+          placeholder="Search for a beer here.."
           onChange={handleInput}
         />
       </div>
