@@ -1,0 +1,107 @@
+@use "../../Styles/variables.scss" as *;
+
+main {
+  display: grid;
+  justify-items: center;
+  padding: 1.5rem;
+}
+
+.contain {
+  width: 90%;
+  border: black 1px solid;
+  border-radius: 15px;
+  padding: 1.5rem;
+
+  .green-c {
+    color: $green-c;
+  }
+  .black-c {
+    color: $black-c;
+  }
+  img {
+    max-width: 3.5rem;
+  }
+
+  &__img {
+    display: grid;
+    justify-items: center;
+    padding-bottom: 2rem;
+  }
+
+  &__about {
+    display: grid;
+    grid-template-rows: 0.5fr 1.6fr 1fr 0.5fr;
+    gap: 0.8rem;
+
+    h3 {
+      color: $red-c;
+    }
+
+    h4,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    &__list {
+      width: 20rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__button {
+      display: grid;
+      grid-template-columns: repeat(2, 50px);
+      gap: 8rem;
+    }
+  }
+}
+
+//Media queries
+//For big screens
+@media screen and (min-width: 1200px) {
+  .contain {
+    width: 55%;
+    border: black 1px solid;
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+
+    .green-c {
+      color: $green-c;
+    }
+    .black-c {
+      color: $black-c;
+    }
+    img {
+      max-width: 8rem;
+    }
+
+    &__img {
+      padding: 1rem;
+      display: grid;
+      justify-items: center;
+    }
+
+    &__about {
+      display: grid;
+      grid-template-rows: 0.5fr 1.6fr 1fr 0.5fr;
+      gap: 0.8rem;
+
+      h3 {
+        color: $red-c;
+      }
+
+      h4 {
+        margin: 0;
+      }
+
+      &__button {
+        display: grid;
+        grid-template-columns: repeat(2, 180px);
+      }
+    }
+  }
+}
