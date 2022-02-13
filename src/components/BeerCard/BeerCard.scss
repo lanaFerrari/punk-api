@@ -1,0 +1,67 @@
+@use "../../Styles/variables.scss" as *;
+a {
+  text-decoration: none;
+}
+
+.container-item {
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: $grey-c;
+  display: grid;
+  justify-items: center;
+
+  &__img {
+    border-radius: 12px;
+    border-radius: 12px;
+    max-width: 16rem;
+  }
+
+  &__tittle-container {
+    padding-top: 0.9rem;
+    max-width: 200px;
+
+    &__title {
+      margin: 0;
+      height: 40px;
+      font-family: "Secular One", sans-serif;
+      color: $black-c;
+    }
+  }
+
+  &__paragraph {
+    color: $black-c;
+  }
+  &__about {
+    font-weight: bolder;
+
+    &__ph {
+      color: $blue-c;
+      margin: 0;
+    }
+
+    &__abv {
+      color: $red-c;
+    }
+  }
+
+  &__button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  &__about,
+  &__tittle-container {
+    display: grid;
+    justify-items: center;
+  }
+}
+
+.container-item:hover {
+  padding: 1rem;
+  background-color: rgb(228, 228, 228);
+}
+
+.container-item:checked {
+  text-decoration: none;
+}

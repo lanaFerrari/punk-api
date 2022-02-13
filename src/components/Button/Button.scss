@@ -1,0 +1,21 @@
+@use "../../Styles/variables.scss" as *;
+
+button {
+  border-radius: 40px;
+  width: 140px;
+  border: none;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: medium;
+  color: white;
+}
+.external {
+  background-color: $green-c;
+}
+.internal {
+  background-color: $blue-c;
+}
+
+.internal:hover,
+.external:hover {
+  background-color: $red-c;
+}

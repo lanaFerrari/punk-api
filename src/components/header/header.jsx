@@ -1,6 +1,6 @@
 import React from "react";
 import bg from "../../imgs/bewdog.webp";
-import "./header.scss";
+import "./Header.scss";
 
 const Header = () => {
   return (

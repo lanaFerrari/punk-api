@@ -1,5 +1,5 @@
 import React from "react";
-import "./navbar.scss";
+import "./Navbar.scss";
 
 const Navbar = (props) => {
   const { filterByPh, filterByRange, filterByAbv, userInput, handleInput } =
