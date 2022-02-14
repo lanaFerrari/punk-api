@@ -2,7 +2,7 @@ import React from "react";
 import "./BeerCard.scss";
 import beerPic from "../../imgs/beer.jpg";
 import Button from "../Button/Button";
-//
+
 const BeerCard = (props) => {
   const { beer, index } = props;
   const description = beer.description.split(".");

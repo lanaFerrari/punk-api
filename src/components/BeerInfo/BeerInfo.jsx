@@ -10,7 +10,7 @@ const BeerInfo = (props) => {
 
   const foundBeer = beersList.filter((beer) => beer.id === Number(id));
   const [beer, setBeer] = useState(foundBeer[0]);
-  //
+
   return (
     <main>
       <div className="contain">
