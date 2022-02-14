@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import CardList from "../../containers/CardList/CardList";
 import Navbar from "../Navbar/Navbar";
 import "./HomeMain.scss";
-import Cardlist from "../../containers/Cardlist";
 
 const HomeMain = (props) => {
   const { beersList } = props;
@@ -51,7 +51,7 @@ const HomeMain = (props) => {
         userInput={userInput}
         handleInput={handleInput}
       />
-      <Cardlist beersArray={filteredBeerList} />
+      <CardList beersArray={filteredBeerList} />
     </main>
   );
 };
