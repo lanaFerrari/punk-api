@@ -16,7 +16,7 @@ On this website, the user can check all Brewdog Beers and filter them according 
 https://lf-punk-api.herokuapp.com/
 
 ## Preview
-![screenshot](https://user-images.githubusercontent.com/48991462/153866532-7ab19818-c761-4f61-ac33-380abda17f24.png)
+![screenshot-punk](https://user-images.githubusercontent.com/48991462/153866765-775b630d-5c3f-4643-9cf1-483bb8fc15e5.png)
 
 ## Credits
 - API: <a href="https://punkapi.com/">Punk API</a>
