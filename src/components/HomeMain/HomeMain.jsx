@@ -25,21 +25,25 @@ const HomeMain = (props) => {
   };
 
   const filteredBeerList = beersList.filter((beer) => {
+    let beerFound = true;
+
     if (userInput) {
-      return beer.name.toLowerCase().includes(userInput);
+      beerFound = beer.name.toLowerCase().includes(userInput);
     }
-    if (!abv && !ph && !range) {
-      return beersList;
-    }
+
     if (abv) {
-      return beer.abv > 6;
+      beerFound = beerFound && beer.abv > 6;
     }
+
     if (ph) {
-      return beer.ph < 4;
+      beerFound = beerFound && beer.ph < 4;
     }
+
     if (range) {
-      return beer.first_brewed.split("/")[1] >= 2010;
+      beerFound = beerFound && beer.first_brewed.split("/")[1] >= 2010;
     }
+
+    return beerFound;
   });
 
   return (
