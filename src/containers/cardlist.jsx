@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardList.scss";
+import "./Cardlist.scss";
 import BeerCard from "../components/BeerCard/BeerCard";
 
 const Cardlist = (props) => {
