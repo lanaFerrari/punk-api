@@ -4,7 +4,7 @@ import "./Button.scss";
 
 const Button = (props) => {
   const { text, link, id, intLink } = props;
-
+  //
   if (link) {
     return (
       //External Navigation
