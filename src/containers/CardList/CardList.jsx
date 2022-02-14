@@ -1,8 +1,8 @@
 import React from "react";
-import "./Cardlist.scss";
-import BeerCard from "../components/BeerCard/BeerCard";
+import "./CardList.scss";
+import BeerCard from "../../components/BeerCard/BeerCard";
 
-const Cardlist = (props) => {
+const CardList = (props) => {
   const { beersArray } = props;
 
   return (
@@ -14,4 +14,4 @@ const Cardlist = (props) => {
   );
 };
 
-export default Cardlist;
+export default CardList;
