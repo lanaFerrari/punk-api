@@ -9,13 +9,9 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.punkapi.com/v2/beers?per_page=30")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setData(data);
-      });
+    fetch("https://api.punkapi.com/v2/beers?per_page=80")
+      .then((response) => response.json())
+      .then((data) => setData(data));
   }, []);
 
   return (

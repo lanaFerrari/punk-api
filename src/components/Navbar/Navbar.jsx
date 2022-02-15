@@ -21,10 +21,10 @@ const Navbar = (props) => {
         <div className="navbar__check-input-range">
           <label htmlFor="range">{`Classic Range`}</label>
           <input
-            onClick={filterByRange}
             type="checkbox"
             id="range"
             name="range"
+            onClick={filterByRange}
           />
         </div>
         <div className="navbar__check-input-ph">
